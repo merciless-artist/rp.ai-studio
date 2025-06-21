@@ -105,7 +105,7 @@
         }
         
         .splash-tagline {
-            color: #888;
+            color: black;
             font-size: 14px;
             font-weight: 300;
             letter-spacing: 2px;
@@ -114,7 +114,7 @@
         }
         
         .splash-license {
-            color: #666;
+            color: black;
             font-size: 12px;
             margin-top: 20px;
             opacity: 0.8;
@@ -160,7 +160,7 @@
         }
         
         .tutorial-content {
-            color: #ddd;
+            color: black;
             font-size: 16px;
             line-height: 1.8;
         }
@@ -225,7 +225,7 @@
         }
         
         .credit-text {
-            color: #888;
+            color: black;
             font-size: 14px;
             line-height: 1.8;
             margin-bottom: 20px;
@@ -238,7 +238,7 @@
         }
         
         .license-info {
-            color: #666;
+            color: black;
             font-size: 12px;
             line-height: 1.6;
             max-width: 500px;
@@ -343,7 +343,7 @@
     <div id="opening-screen" class="overlay-screen active" onclick="this.classList.add('fade-out')">
         <div class="splash-container">
             <div class="splash-logo-container">
-                <img src="assets/logo.png" alt="RP.ai Studio" class="splash-logo-image">
+                <img src="https://i.imgur.com/bLaIvce.png" alt="RP.ai Studio" class="splash-logo-image">
             </div>
             
             <div class="splash-tagline">
@@ -354,7 +354,7 @@
                 Licensed under CC BY-NC 2025
             </div>
             
-            <p class="text-xl mt-8 text-gray-300 animate-pulse">Click anywhere to continue</p>
+            <p class="text-xl mt-8 text-black animate-pulse">Click anywhere to continue</p>
         </div>
     </div>
     
@@ -370,16 +370,16 @@
         <div class="credits-container">
             <div class="success-icon text-6xl mb-6 animate-bounce">🎉</div>
             <h2 class="text-3xl font-bold mb-4" style="color: #f5e6d3;">Success!</h2>
-            <p class="text-xl mb-8" style="color: #ddd;">Your bot files have been downloaded!</p>
+            <p class="text-xl mb-8" style="color: black;">Your bot files have been downloaded!</p>
             
-            <div class="completion-message mb-8" style="color: #888; font-size: 14px; letter-spacing: 1px;">
+            <div class="completion-message mb-8" style="color: black; font-size: 14px; letter-spacing: 1px;">
                 Your AI character is ready to go live
             </div>
             
             <div class="divider"></div>
             
             <div class="credits-logo-container mb-6">
-                <img src="assets/logo.png" alt="RP.ai Studio" class="credits-logo-image">
+                <img src="https://i.imgur.com/bLaIvce.png" alt="RP.ai Studio" class="credits-logo-image">
             </div>
             
             <div class="credit-text mb-4">
@@ -400,9 +400,9 @@
     <div class="container mx-auto p-4 md:p-8 max-w-4xl">
         <header class="text-center mb-8">
             <div class="header-logo-container mb-6">
-                <img src="assets/logo.png" alt="RP.ai Studio" class="header-logo-image mx-auto">
+                <img src="https://i.imgur.com/bLaIvce.png" alt="RP.ai Studio" class="header-logo-image mx-auto">
             </div>
-            <p class="text-sm text-gray-400">Create Discord bots with Silly Tavern compatible character cards.</p>
+            <p class="text-sm text-black">Create Discord bots with Silly Tavern compatible character cards.</p>
             <p class="text-xl mt-2 font-semibold" style="color: #f5e6d3;">Decentralized, open source, free forever</p>
             <div class="mt-4 flex justify-center flex-wrap gap-4">
                  💠<a href="https://ko-fi.com/thestudio" target="_blank" style="background-color: #E8AEDA; color: #50484E;" class="font-bold py-2 px-4 rounded-lg transition-colors hover:opacity-80">Support on Ko-fi</a>💠
@@ -416,70 +416,70 @@
             <!-- Section 1: Persona -->
             <section>
                 <h2 class="text-2xl font-bold mb-2 text-pink-300">1. Character Persona</h2>
-                <p class="mb-4 text-gray-400">Define your character's name, creator, and their detailed personality using the fields below.</p>
+                <p class="mb-4 text-black">Define your character's name, creator, and their detailed personality using the fields below.</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                        <label for="charName" class="block mb-2 text-sm font-medium text-gray-300">💠Character Name</label>
+                        <label for="charName" class="block mb-2 text-sm font-medium text-black">💠Character Name</label>
                         <input type="text" id="charName" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="e.g., Luna">
                     </div>
                     <div>
-                        <label for="creator" class="block mb-2 text-sm font-medium text-gray-300">💠Creator Name</label>
+                        <label for="creator" class="block mb-2 text-sm font-medium text-black">💠Creator Name</label>
                         <input type="text" id="creator" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="Your name or alias">
                     </div>
                 </div>
                 <div class="mt-6 space-y-6">
                     <div>
-                        <label for="description" class="block mb-2 text-sm font-medium text-gray-300">💠Description</label>
+                        <label for="description" class="block mb-2 text-sm font-medium text-black">💠Description</label>
                         <textarea id="description" rows="4" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="A creative and mysterious artist who loves late night conversations..."></textarea>
                     </div>
                     <div>
-                        <label for="personality" class="block mb-2 text-sm font-medium text-gray-300">💠Personality</label>
+                        <label for="personality" class="block mb-2 text-sm font-medium text-black">💠Personality</label>
                         <textarea id="personality" rows="4" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="e.g., Creative, sarcastic, mysterious, flirty..."></textarea>
                     </div>
                     <div>
-                        <label for="scenario" class="block mb-2 text-sm font-medium text-gray-300">💠Scenario / Worldlore</label>
+                        <label for="scenario" class="block mb-2 text-sm font-medium text-black">💠Scenario / Worldlore</label>
                         <textarea id="scenario" rows="4" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="e.g., Lives in The Studio, a creative community..."></textarea>
                     </div>
                     <div>
-                        <label for="first_mes" class="block mb-2 text-sm font-medium text-gray-300">💠First Message (Greeting)</label>
+                        <label for="first_mes" class="block mb-2 text-sm font-medium text-black">💠First Message (Greeting)</label>
                         <textarea id="first_mes" rows="4" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="*Looks up from their art* Oh, hello there!"></textarea>
                     </div>
                     <div>
-                        <label for="mes_example" class="block mb-2 text-sm font-medium text-gray-300">💠Example Dialogue</label>
+                        <label for="mes_example" class="block mb-2 text-sm font-medium text-black">💠Example Dialogue</label>
                         <textarea id="mes_example" rows="6" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="<START>&#10;{{user}}: How was your day?&#10;{{char}}: *Stretches* It was inspiring!"></textarea>
-                        <p class="mt-2 text-xs text-gray-400">This system uses the variables {{user}} and {{char}} - Separate dialogue blocks with &lt;START&gt;</p>
+                        <p class="mt-2 text-xs text-black">This system uses the variables {{user}} and {{char}} - Separate dialogue blocks with &lt;START&gt;</p>
                     </div>
                     <div>
-                        <label class="block mb-3 text-sm font-medium text-gray-300">💠Custom Keywords aka Soft Custom Commands (Optional)</label>
+                        <label class="block mb-3 text-sm font-medium text-black">💠Custom Keywords aka Soft Custom Commands (Optional)</label>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
-                                <label for="keyword1_trigger" class="block mb-1 text-xs font-medium text-gray-400">Keyword/Trigger 1</label>
+                                <label for="keyword1_trigger" class="block mb-1 text-xs font-medium text-black">Keyword/Trigger 1</label>
                                 <input type="text" id="keyword1_trigger" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2 mb-2" placeholder="!server">
                                 <textarea id="keyword1_behavior" rows="2" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2" placeholder="If {{user}} mentions !server then {{char}} shares the gaming server link: discord.gg/example"></textarea>
                             </div>
                             <div>
-                                <label for="keyword2_trigger" class="block mb-1 text-xs font-medium text-gray-400">Keyword/Trigger 2</label>
+                                <label for="keyword2_trigger" class="block mb-1 text-xs font-medium text-black">Keyword/Trigger 2</label>
                                 <input type="text" id="keyword2_trigger" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2 mb-2" placeholder="!quote">
                                 <textarea id="keyword2_behavior" rows="2" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2" placeholder="If {{user}} says !quote then {{char}} shares an inspirational quote about their interests"></textarea>
                             </div>
                         </div>
-                        <p class="mt-2 text-xs text-gray-400">Create AI-driven keyword behaviors, formatted as if/then statements. The AI will naturally respond to these triggers when they appear in conversation.</p>
+                        <p class="mt-2 text-xs text-black">Create AI-driven keyword behaviors, formatted as if/then statements. The AI will naturally respond to these triggers when they appear in conversation.</p>
                     </div>
                     <div>
-                        <label for="tags" class="block mb-2 text-sm font-medium text-gray-300">💠Character Tags</label>
+                        <label for="tags" class="block mb-2 text-sm font-medium text-black">💠Character Tags</label>
                         <input type="text" id="tags" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="e.g., artist, musician, friendly, mysterious">
-                        <p class="mt-2 text-xs text-gray-400">Comma-separated tags for categorization.</p>
+                        <p class="mt-2 text-xs text-black">Comma-separated tags for categorization.</p>
                     </div>
                     <div>
-                        <label for="post_history_instructions" class="block mb-2 text-sm font-medium text-gray-300">💠Post History (AI Preset/Jailbreak) (Optional)</label>
+                        <label for="post_history_instructions" class="block mb-2 text-sm font-medium text-black">💠Post History (AI Preset/Jailbreak) (Optional)</label>
                         <textarea id="post_history_instructions" rows="3" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="e.g., Keep responses short and playful. Focus on emotional connection."></textarea>
                     </div>
                     <div>
-                        <label for="system_prompt" class="block mb-2 text-sm font-medium text-gray-300">💠System Prompt (Optional)</label>
+                        <label for="system_prompt" class="block mb-2 text-sm font-medium text-black">💠System Prompt (Optional)</label>
                         <textarea id="system_prompt" rows="3" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="e.g., You are a helpful assistant. Always respond in character."></textarea>
                     </div>
                     <div>
-                        <label for="relationships" class="block mb-2 text-sm font-medium text-gray-300">💠Relationships (Optional)</label>
+                        <label for="relationships" class="block mb-2 text-sm font-medium text-black">💠Relationships (Optional)</label>
                         <textarea id="relationships" rows="3" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="e.g., Best friend: Alex\nRival: Jordan\nMentor: Dr. Smith"></textarea>
                     </div>
                 </div>
@@ -502,10 +502,10 @@
                 <div class="mt-6">
                     <h3 class="text-lg font-semibold text-pink-300 mb-4">💠Creator Notes💠(Password Protected)💠</h3>
                     <div class="bg-gray-600/20 border border-pink-300/30 rounded-lg p-4 mb-4">
-                        <p class="text-sm text-amber-100 mb-2">
+                        <p class="text-sm text-pink-300 mb-2">
                             <strong>Private & Secure:</strong> These notes are password protected and NOT included in character files. Use this space for:
                         </p>
-                        <ul class="text-sm text-amber-200 list-disc list-inside space-y-1">
+                        <ul class="text-sm text-pink-300 list-disc list-inside space-y-1">
                             <li>Personal reminders about the character</li>
                             <li>Development notes and ideas</li>
                             <li>Character arc plans</li>
@@ -518,25 +518,25 @@
                     <div id="notes-password-setup" class="mb-4">
                         <div class="flex gap-2 items-end">
                             <div class="flex-1">
-                                <label for="notes-password" class="block mb-2 text-sm font-medium text-amber-100">Set Password for Notes</label>
-                                <input type="password" id="notes-password" style="background-color: #DBCBD7; color: #50484E;" class="border border-yellow-600 text-sm rounded-lg focus:ring-yellow-500 focus:border-yellow-500 block w-full p-2.5" placeholder="Enter password to protect your notes">
+                                <label for="notes-password" class="block mb-2 text-sm font-medium text-pink-300">Set Password for Notes</label>
+                                <input type="password" id="notes-password" style="background-color: #DBCBD7; color: #50484E;" class="border border-pink-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="Enter password to protect your notes">
                             </div>
                             <button onclick="unlockCreatorNotes()" style="background-color: #E8AEDA; color: #50484E;" class="font-bold py-2.5 px-4 rounded-lg transition-colors hover:opacity-80">
                                 🔓 Unlock
                             </button>
                         </div>
-                        <p class="text-xs text-amber-200 mt-1">Password is stored locally and encrypted. No one else can access your notes without it.</p>
+                        <p class="text-xs text-pink-300 mt-1">Password is stored locally and encrypted. No one else can access your notes without it.</p>
                     </div>
                     
                     <!-- Notes Area (Initially Hidden) -->
                     <div id="notes-area" style="display: none;">
                         <div class="mb-2 flex justify-between items-center">
-                            <label for="creator-notes" class="text-sm font-medium text-amber-100">Your Private Notes</label>
+                            <label for="creator-notes" class="text-sm font-medium text-pink-300">Your Private Notes</label>
                             <button onclick="lockCreatorNotes()" class="bg-red-600 hover:bg-red-700 text-white text-xs font-bold py-1 px-2 rounded transition-colors">
                                 🔒 Lock Notes
                             </button>
                         </div>
-                        <textarea id="creator-notes" rows="4" class="bg-gray-700 border border-yellow-600 text-white text-sm rounded-lg focus:ring-yellow-500 focus:border-yellow-500 block w-full p-2.5" placeholder="e.g., Based on my friend Alex's personality... Inspired by [source]... Remember to test the flirty scenarios... Character arc: starts shy, becomes confident..."></textarea>
+                        <textarea id="creator-notes" rows="4" class="bg-gray-700 border border-pink-600 text-white text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="e.g., Based on my friend Alex's personality... Inspired by [source]... Remember to test the flirty scenarios... Character arc: starts shy, becomes confident..."></textarea>
                         <div class="mt-2 flex gap-2">
                             <button onclick="saveCreatorNotes()" class="bg-green-600 hover:bg-green-700 text-white text-sm font-bold py-1 px-3 rounded transition-colors">
                                 💾 Save Notes
@@ -551,7 +551,7 @@
                                 🔧 Fix Corrupted
                             </button>
                         </div>
-                        <p class="text-xs text-amber-200 mt-1">Notes are automatically encrypted and saved locally in your browser.</p>
+                        <p class="text-xs text-pink-300 mt-1">Notes are automatically encrypted and saved locally in your browser.</p>
                     </div>
                 </div>
             </section>
@@ -621,14 +621,14 @@
             <!-- Section 4: Memory System Choice -->
             <section>
                 <h2 class="text-2xl font-bold mb-2 text-pink-300">💠Memory System💠</h2>
-                <p class="mb-4 text-gray-400">The Bot Builder memory system is under construction currently! We will update you in Lemon Land when the Advanced memory is ready. Thank you!</p>
+                <p class="mb-4 text-black">The Bot Builder memory system is under construction currently! We will update you in Lemon Land when the Advanced memory is ready. Thank you!</p>
                 <div class="space-y-4">
                     <div class="bg-gray-700 p-4 rounded-lg">
                         <label class="flex items-start cursor-pointer">
                             <input type="radio" name="memory_type" value="simple" checked class="mt-1 mr-3" onchange="toggleMemoryFields()">
                             <div>
                                 <span class="font-medium text-white">Simple Memory (Default)</span>
-                                <p class="text-sm text-gray-400 mt-1">Stores recent messages per channel. No additional setup required. Good for casual use.</p>
+                                <p class="text-sm text-black mt-1">Stores recent messages per channel. No additional setup required. Good for casual use.</p>
                             </div>
                         </label>
                     </div>
@@ -637,7 +637,7 @@
                             <input type="radio" name="memory_type" value="advanced" class="mt-1 mr-3" onchange="toggleMemoryFields()">
                             <div>
                                 <span class="font-medium text-white">Advanced Memory with AI Summaries</span>
-                                <p class="text-sm text-gray-400 mt-1">Intelligent conversation summaries using Groq's FREE API. Remembers important details forever.</p>
+                                <p class="text-sm text-black mt-1">Intelligent conversation summaries using Groq's FREE API. Remembers important details forever.</p>
                             </div>
                         </label>
                     </div>
@@ -645,17 +645,17 @@
                 <div id="groq-setup" class="mt-6 hidden">
                     <div class="bg-pink-900/30 border border-pink-700 rounded-lg p-4 mb-4">
                         <h3 class="text-lg font-semibold text-pink-300 mb-2">💠 Getting Your Free Groq API Key</h3>
-                        <ol class="text-sm text-gray-300 space-y-1 list-decimal list-inside">
+                        <ol class="text-sm text-black space-y-1 list-decimal list-inside">
                             <li>Visit <a href="https://console.groq.com" target="_blank" class="text-pink-300 hover:text-pink-300">console.groq.com</a></li>
                             <li>Sign up for a free account (no credit card required)</li>
                             <li>Go to API Keys section</li>
                             <li>Create a new API key</li>
                             <li>Copy and paste it below</li>
                         </ol>
-                        <p class="text-xs text-gray-400 mt-2">Groq is completely FREE and perfect for memory summaries!</p>
+                        <p class="text-xs text-black mt-2">Groq is completely FREE and perfect for memory summaries!</p>
                     </div>
                     <div>
-                        <label for="groq_api_key" class="block mb-2 text-sm font-medium text-gray-300">Groq API Key</label>
+                        <label for="groq_api_key" class="block mb-2 text-sm font-medium text-black">Groq API Key</label>
                         <input type="password" id="groq_api_key" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="gsk_...">
                     </div>
                 </div>
@@ -664,14 +664,14 @@
             <!-- Section 5: Configuration -->
             <section>
                 <h2 class="text-2xl font-bold mb-2 text-pink-300">💠Configuration & Secrets💠</h2>
-                <p class="mb-4 text-gray-400">Provide the secret tokens and keys needed for the bot to connect to Discord and the AI service. Don't worry, none of this will be saved past this point, only added to your downloaded file.</p>
+                <p class="mb-4 text-black">Provide the secret tokens and keys needed for the bot to connect to Discord and the AI service. Don't worry, none of this will be saved past this point, only added to your downloaded file.</p>
                 <div class="space-y-6">
                     <div>
-                        <label for="discord_token" class="block mb-2 text-sm font-medium text-gray-300">💠Discord Bot Token</label>
+                        <label for="discord_token" class="block mb-2 text-sm font-medium text-black">💠Discord Bot Token</label>
                         <input type="password" id="discord_token" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="Paste your bot token here">
                     </div>
                     <div>
-                        <label for="api_provider" class="block mb-2 text-sm font-medium text-gray-300">💠AI Provider</label>
+                        <label for="api_provider" class="block mb-2 text-sm font-medium text-black">💠AI Provider</label>
                         <select id="api_provider" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" onchange="updateApiEndpoint()">
                             <option value="">Select AI Provider...</option>
                             <option value="exomlapi">exomlapi</option>
@@ -680,39 +680,39 @@
                         </select>
                     </div>
                     <div>
-                        <label for="api_key" class="block mb-2 text-sm font-medium text-gray-300">💠AI Provider API Key</label>
+                        <label for="api_key" class="block mb-2 text-sm font-medium text-black">💠AI Provider API Key</label>
                         <input type="password" id="api_key" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="Paste your AI provider's API key">
                     </div>
                     <div>
-                        <label for="api_endpoint" class="block mb-2 text-sm font-medium text-gray-300">💠API Endpoint URL</label>
-                        <div id="api_info" class="mb-2 text-sm text-gray-400 hidden"></div>
+                        <label for="api_endpoint" class="block mb-2 text-sm font-medium text-black">💠API Endpoint URL</label>
+                        <div id="api_info" class="mb-2 text-sm text-black hidden"></div>
                         <input type="text" id="api_endpoint" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="Select a provider above or enter custom endpoint">
                     </div>
                     <div>
-                        <label for="ai_model" class="block mb-2 text-sm font-medium text-gray-300">💠AI Model</label>
+                        <label for="ai_model" class="block mb-2 text-sm font-medium text-black">💠AI Model</label>
                         <input type="text" id="ai_model" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="e.g., google/gemini-pro or llama3-8b-8192">
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
-                            <label for="temperature" class="block mb-2 text-sm font-medium text-gray-300">💠Temperature (Optional)</label>
+                            <label for="temperature" class="block mb-2 text-sm font-medium text-black">💠Temperature (Optional)</label>
                             <input type="number" id="temperature" step="0.1" min="0.0" max="2.0" value="" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="Leave empty for API default">
-                            <p class="mt-1 text-xs text-gray-400">Controls creativity: 0.0 = focused, 2.0 = very creative</p>
+                            <p class="mt-1 text-xs text-black">Controls creativity: 0.0 = focused, 2.0 = very creative</p>
                         </div>
                         <div>
-                            <label for="top_p" class="block mb-2 text-sm font-medium text-gray-300">💠Top-p (Optional)</label>
+                            <label for="top_p" class="block mb-2 text-sm font-medium text-black">💠Top-p (Optional)</label>
                             <input type="number" id="top_p" step="0.05" min="0.0" max="1.0" value="" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="Leave empty for API default">
-                            <p class="mt-1 text-xs text-gray-400">Controls vocabulary: 0.1 = limited, 1.0 = full range</p>
+                            <p class="mt-1 text-xs text-black">Controls vocabulary: 0.1 = limited, 1.0 = full range</p>
                         </div>
                     </div>
                     <div>
-                        <label for="command_prefix" class="block mb-2 text-sm font-medium text-gray-300">💠Command Prefix (Optional)</label>
+                        <label for="command_prefix" class="block mb-2 text-sm font-medium text-black">💠Command Prefix (Optional)</label>
                         <input type="text" id="command_prefix" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" value="!" placeholder="!">
-                        <p class="mt-2 text-xs text-gray-400">Prefix for bot commands. Default is "!"</p>
+                        <p class="mt-2 text-xs text-black">Prefix for bot commands. Default is "!"</p>
                     </div>
                     <div>
-                        <label for="discord_user_id" class="block mb-2 text-sm font-medium text-gray-300">💠Your Discord User ID (Optional)</label>
+                        <label for="discord_user_id" class="block mb-2 text-sm font-medium text-black">💠Your Discord User ID (Optional)</label>
                         <input type="text" id="discord_user_id" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-600 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="e.g., 966507927756234823">
-                        <p class="mt-2 text-xs text-gray-400">Your Discord user ID for creator recognition. The bot will know you're its creator.</p>
+                        <p class="mt-2 text-xs text-black">Your Discord user ID for creator recognition. The bot will know you're its creator.</p>
                     </div>
                 </div>
             </section>
@@ -721,21 +721,21 @@
             <section>
                 <h2 class="text-2xl font-bold mb-2 text-pink-300">💠Character Preview & Download💠</h2>
                 <div class="mb-6">
-                    <h3 class="text-xl font-semibold mb-3 text-gray-300">Don't forget to change your env.txt to .env</h3>
-                    <p class="text-sm text-gray-400 mb-2">This shows what will be included in your character file. Creator Notes are private and not shown here.</p>
+                    <h3 class="text-xl font-semibold mb-3 text-black">Don't forget to change your env.txt to .env</h3>
+                    <p class="text-sm text-black mb-2">This shows what will be included in your character file. Creator Notes are private and not shown here.</p>
                     <div id="character-preview" class="bg-gray-700 p-4 rounded-lg">
-                        <p class="text-gray-400 text-center">Fill in character details above to see preview</p>
+                        <p class="text-black text-center">Fill in character details above to see preview</p>
                     </div>
                 </div>
                 <div class="mb-6 flex gap-4 justify-center">
-                    <button onclick="importCharacter()" style="background-color: #57B9FF; color: #50484E;" class="font-medium py-2 px-4 rounded-lg transition-colors hover:opacity-80">
+                    <button onclick="importCharacter()" style="background-color: #E8AEDA; color: #50484E;" class="font-medium py-2 px-4 rounded-lg transition-colors hover:opacity-80">
                         💠Import Character💠
                     </button>
                 </div>
-                <h3 class="text-xl font-semibold mb-3 text-gray-300">Download Bot Files</h3>
-                 <p class="mb-4 text-gray-400">Everything is ready! Click the button below to download your bot files.</p>
+                <h3 class="text-xl font-semibold mb-3 text-black">Download Bot Files</h3>
+                 <p class="mb-4 text-black">Everything is ready! Click the button below to download your bot files.</p>
                  <div class="disclaimer bg-gray-700/50 border border-gray-600 rounded-lg p-4 mb-6 text-center">
-                    <p class="text-sm text-gray-400">
+                    <p class="text-sm text-black">
                         <strong>💠Disclaimer:</strong>This tool does not store any of your data. Once you download the files, your bot and its data exist only on your device. You are solely responsible for the bot you create and how it is used.
                     </p>
                 </div>
@@ -755,22 +755,22 @@
                 </div>
                 <div class="text-center">
                     <h3 class="text-2xl font-bold mb-4">💠Download Your Bot Files💠</h3>
-                    <p class="mb-4 text-gray-300">Click each button to download the files individually:</p>
+                    <p class="mb-4 text-black">Click each button to download the files individually:</p>
                     
                     <div class="flex flex-wrap justify-center gap-2 mb-6">
-                        <button onclick="downloadFile('character.json', generateSillyTavernCard())" style="background-color: #57B9FF; color: #50484E;" class="font-bold py-2 px-4 rounded-lg transition-colors hover:opacity-80">
+                        <button onclick="downloadFile('character.json', generateSillyTavernCard())" style="background-color: #E8AEDA; color: #50484E;" class="font-bold py-2 px-4 rounded-lg transition-colors hover:opacity-80">
                             Download character.json
                         </button>
-                        <button onclick="downloadFile('app.py', generateAppPy())" style="background-color: #57B9FF; color: #50484E;" class="font-bold py-2 px-4 rounded-lg transition-colors hover:opacity-80">
+                        <button onclick="downloadFile('app.py', generateAppPy())" style="background-color: #E8AEDA; color: #50484E;" class="font-bold py-2 px-4 rounded-lg transition-colors hover:opacity-80">
                             Download app.py
                         </button>
-                        <button onclick="downloadFile('requirements.txt', generateRequirements())" style="background-color: #57B9FF; color: #50484E;" class="font-bold py-2 px-4 rounded-lg transition-colors hover:opacity-80">
+                        <button onclick="downloadFile('requirements.txt', generateRequirements())" style="background-color: #E8AEDA; color: #50484E;" class="font-bold py-2 px-4 rounded-lg transition-colors hover:opacity-80">
                             Download requirements.txt
                         </button>
-                        <button onclick="downloadFile('.env', generateEnvFile())" style="background-color: #57B9FF; color: #50484E;" class="font-bold py-2 px-4 rounded-lg transition-colors hover:opacity-80">
+                        <button onclick="downloadFile('.env', generateEnvFile())" style="background-color: #E8AEDA; color: #50484E;" class="font-bold py-2 px-4 rounded-lg transition-colors hover:opacity-80">
                             Download .env
                         </button>
-                        <button id="memory-download-btn" onclick="downloadFile('memory_service.py', generateMemoryService())" style="background-color: #57B9FF; color: #50484E; display: none;" class="font-bold py-2 px-4 rounded-lg transition-colors hover:opacity-80">
+                        <button id="memory-download-btn" onclick="downloadFile('memory_service.py', generateMemoryService())" style="background-color: #E8AEDA; color: #50484E; display: none;" class="font-bold py-2 px-4 rounded-lg transition-colors hover:opacity-80">
                             Download memory_service.py
                         </button>
                     </div>
@@ -1948,18 +1948,18 @@ class FeedbackModal(discord.ui.Modal, title='Beta Testing Feedback'):
             
             sectionDiv.innerHTML = `
                 <div class="flex justify-between items-center mb-3">
-                    <h4 class="text-md font-medium text-gray-300">Custom Section #${customSectionCounter}</h4>
+                    <h4 class="text-md font-medium text-black">Custom Section #${customSectionCounter}</h4>
                     <button type="button" onclick="removeCustomSection(${customSectionCounter})" class="bg-red-600 hover:bg-red-700 text-white font-medium py-1 px-3 rounded text-sm transition-colors">
                         Remove
                     </button>
                 </div>
                 <div class="space-y-3">
                     <div>
-                        <label class="block mb-2 text-sm font-medium text-gray-300">Section Name</label>
+                        <label class="block mb-2 text-sm font-medium text-black">Section Name</label>
                         <input type="text" id="custom-name-${customSectionCounter}" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-500 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="e.g., Background, Skills, Equipment">
                     </div>
                     <div>
-                        <label class="block mb-2 text-sm font-medium text-gray-300">Section Content</label>
+                        <label class="block mb-2 text-sm font-medium text-black">Section Content</label>
                         <textarea id="custom-content-${customSectionCounter}" rows="3" style="background-color: #DBCBD7; color: #50484E;" class="border border-gray-500 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5" placeholder="Enter your custom content here..."></textarea>
                     </div>
                 </div>
@@ -2204,23 +2204,23 @@ class FeedbackModal(discord.ui.Modal, title='Beta Testing Feedback'):
             
             let customSectionsHtml = '';
             if (Object.keys(customSections).length > 0) {
-                customSectionsHtml = '<div class="mt-3 pt-3 border-t border-gray-600"><span class="font-medium text-gray-300">Custom Sections:</span>';
+                customSectionsHtml = '<div class="mt-3 pt-3 border-t border-gray-600"><span class="font-medium text-black">Custom Sections:</span>';
                 for (const [sectionName, content] of Object.entries(customSections)) {
                     const truncatedContent = content.length > 50 ? content.substring(0, 50) + '...' : content;
                     const safeName = escapeHtml(sectionName);
                     const safeContent = escapeHtml(truncatedContent);
-                    customSectionsHtml += `<div class="mt-1"><span class="text-xs font-medium text-pink-300">${safeName}:</span> <span class="text-xs text-gray-400">${safeContent}</span></div>`;
+                    customSectionsHtml += `<div class="mt-1"><span class="text-xs font-medium text-pink-300">${safeName}:</span> <span class="text-xs text-black">${safeContent}</span></div>`;
                 }
                 customSectionsHtml += '</div>';
             }
             
             let keywordsHtml = '';
             if (keywords.length > 0) {
-                keywordsHtml = '<div class="mt-3 pt-3 border-t border-gray-600"><span class="font-medium text-gray-300">Custom Keywords:</span>';
+                keywordsHtml = '<div class="mt-3 pt-3 border-t border-gray-600"><span class="font-medium text-black">Custom Keywords:</span>';
                 keywords.forEach(keyword => {
                     const safeTrigger = escapeHtml(keyword.trigger);
                     const safeBehavior = escapeHtml(keyword.behavior.length > 60 ? keyword.behavior.substring(0, 60) + '...' : keyword.behavior);
-                    keywordsHtml += `<div class="mt-1"><span class="text-xs font-medium text-pink-300">${safeTrigger}:</span> <span class="text-xs text-gray-400">${safeBehavior}</span></div>`;
+                    keywordsHtml += `<div class="mt-1"><span class="text-xs font-medium text-pink-300">${safeTrigger}:</span> <span class="text-xs text-black">${safeBehavior}</span></div>`;
                 });
                 keywordsHtml += '</div>';
             }
@@ -2229,16 +2229,16 @@ class FeedbackModal(discord.ui.Modal, title='Beta Testing Feedback'):
             preview.innerHTML = `
                 <div class="mb-3">
                     <h4 class="font-bold text-lg text-white">${name}</h4>
-                    <p class="text-xs text-gray-400">Tags: ${tags}</p>
+                    <p class="text-xs text-black">Tags: ${tags}</p>
                 </div>
                 <div class="space-y-2 text-sm">
                     <div>
-                        <span class="font-medium text-gray-300">Description:</span>
-                        <p class="text-gray-400">${description.length > 100 ? description.substring(0, 100) + '...' : description}</p>
+                        <span class="font-medium text-black">Description:</span>
+                        <p class="text-black">${description.length > 100 ? description.substring(0, 100) + '...' : description}</p>
                     </div>
                     <div>
-                        <span class="font-medium text-gray-300">Personality:</span>
-                        <p class="text-gray-400">${personality.length > 100 ? personality.substring(0, 100) + '...' : personality}</p>
+                        <span class="font-medium text-black">Personality:</span>
+                        <p class="text-black">${personality.length > 100 ? personality.substring(0, 100) + '...' : personality}</p>
                     </div>
                     ${customSectionsHtml}
                     ${keywordsHtml}
