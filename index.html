@@ -403,6 +403,8 @@
                 <img src="https://i.imgur.com/bLaIvce.png" alt="RP.ai Studio" class="header-logo-image mx-auto">
             </div>
             <p class="text-sm" style="color: #f5e6d3;">Create Discord bots with Silly Tavern compatible character cards.</p>
+<p>🔹—💠—💎—💠—🔹</p>            
+<p>WARNING: It is recommended to keep description, personality, and scenario under 500, 300, and 300 characters respectively to avoid token issues, but you can exceed these limits and experiment with what works best. This is just a suggestion.</p>
             <p class="text-xl mt-2 font-semibold" style="color: #f5e6d3;">Decentralized, open source, free forever</p>
             <div class="mt-4 flex justify-center flex-wrap gap-4">
                  💠<a href="https://ko-fi.com/thestudio" target="_blank" style="background-color: #E8AEDA; color: #50484E;" class="font-bold py-2 px-4 rounded-lg transition-colors hover:opacity-80">Support on Ko-fi</a>💠
@@ -581,6 +583,49 @@
                         <p>Scroll up to on that page to Install Link, and copy the link. I like to put the copied link into the bot description so I always know where it is (Under General Information).</p>
                         
                         <p>Paste your install link into a browser and then hit enter, and you can then add your bot to your server.</p>
+                    </div>
+                </div>
+            </section>
+
+  <!-- Section 3: Hosting Options  -->
+            <section>
+                <div class="tutorial-card">
+                    <h2 class="tutorial-title">
+                        <span class="tutorial-icon">🪨</span>
+                        Using Pebble to Host your Bot
+                    </h2>
+                    <div class="tutorial-content">
+                        <p>https://pebblehost.com - <span class="highlight">There are a number of ways you can host your bot. You can use pebble, which i recommend, because it is very user friendly. It is only $3 to host a discord bot per month.</p><p>Go to https://billing.pebblehost.com/aff.php?aff=4363</p>
+                        
+                        <p>Choose the Discord bot for $3/month option.</p>
+                        
+                        <p>With this they offer:</p>
+                        <p>● Java 8</p>
+                       <p>● Java 11</p>
+                       <p>● Many NodeJS Versions (including latest)</p>
+                       <p>● Python (3.x)</p>
+                       <p>Server Specifications</p>
+                       <p>● Xeon E5-1630v3 @ 3.7Ghz / Intel i7-7700k @ 4.5GHz</p>
+                       <p>● 1024MB DDR4 ECC Memory</p>
+                       <p>● 250Mbps Uplink</p>
+                       <p>● Unmetered Bandwidth</p>
+                       <p>● Unmetered SSD Space</p>
+                       <p>Other Features Included</p>
+                       <p>● Full FTP Access</p>
+                       <p>● Discord support</p>
+                       <p>● Node package manager</p>
+                       <p>● Fully Automatic 7 Day Backups</p>
+                       <p>● Detailed usage statistics</p>
+                       <p>● Premade bot installs</p>
+                        
+                        <p>Then go to https://billing.pebblehost.com/clientarea.php?action=products and select your bot by choosing "Log in to game panel</p>
+
+                        
+                        <p>Go to your files tab, and upload your bot files. You will need to name your main file bot.py here. https://panel.pebblehost.com/server/fe2b442c/files </p>
+                        
+                        <p>If you have more questions you can find answers here https://help.pebblehost.com/en/discord-bot-hosting/how-to-setup-your-python-based-discord-bot</p>
+                        
+                        <p>If you want a FREE option for bot hosting, you can use the fps.ms instructions below.</p>
                     </div>
                 </div>
             </section>
@@ -996,7 +1041,19 @@ processing_queue = set()
 
 # --- HELPER FUNCTIONS ---
 def strip_thoughts(text):
-    return re.sub(r'&lt;thinking&gt;.*?&lt;/thinking&gt;', '', text, flags=re.DOTALL).strip()
+    # Remove various thinking tag formats
+    text = re.sub(r'&lt;thinking&gt;.*?&lt;/thinking&gt;', '', text, flags=re.DOTALL)
+    text = re.sub(r'&lt;think&gt;.*?&lt;/think&gt;', '', text, flags=re.DOTALL)
+    text = re.sub(r'&lt;reasoning&gt;.*?&lt;/reasoning&gt;', '', text, flags=re.DOTALL)
+    text = re.sub(r'&lt;reflection&gt;.*?&lt;/reflection&gt;', '', text, flags=re.DOTALL)
+    
+    # Also handle unescaped tags
+    text = re.sub(r'<thinking>.*?</thinking>', '', text, flags=re.DOTALL)
+    text = re.sub(r'<think>.*?</think>', '', text, flags=re.DOTALL)
+    text = re.sub(r'<reasoning>.*?</reasoning>', '', text, flags=re.DOTALL)
+    text = re.sub(r'<reflection>.*?</reflection>', '', text, flags=re.DOTALL)
+    
+    return text.strip()
 
 def get_channel_settings(channel_id):
     if channel_id not in channel_settings:
@@ -1044,14 +1101,13 @@ async def get_ai_response(user_prompt, memory, mode="chat", **kwargs):
     is_creator = str(kwargs.get('user_id')) == str(CREATOR_ID)
     
     # Dynamic instruction that adapts to user's chat style
-    dynamic_instruction = "dynamically follow the user's chat style and change with them. If they choose to speak in narrative third person limited perspective, and using quotation marks around dialogue and italics for thoughts, then you will also. If they choose to chat with you in first person as if you are chatting in a text message or online, then you will also. If they choose to chat with you in roleplay using italics for actions and dialogue in plain text, then you will also."
-    
-    # Create a more concise system message to avoid token limits
+    dynamic_instruction = "dynamically follow the user's chat style and change with them. If they choose to speak in narrative third person limited perspective, and using quotation marks around dialogue and italics for thoughts, then you will also. If they choose to chat with you in first person as if you are chatting in a text message or online, then you will also. If they choose to chat with you in roleplay using italics for actions and dialogue in plain text, then you will also. The only thing that will change this is if they directly instruct you to do otherwise in the character data given."
+
     system_message = f"""You are {character_data.get('name', 'AI')}.
 
-Description: {character_data.get('description', '')[:500]}
-Personality: {character_data.get('personality', '')[:300]}
-Scenario: {character_data.get('scenario', '')[:300]}
+Description: {character_data.get('description', '')}
+Personality: {character_data.get('personality', '')}
+Scenario: {character_data.get('scenario', '')}
 %%CUSTOM_KEYWORDS%%
 %%ADDITIONAL_SYSTEM_PROMPT%%
 
@@ -1118,7 +1174,14 @@ Response Mode: {dynamic_instruction}
                 else:
                     error_text = await response.text()
                     print(f"API Error: {response.status} - {error_text}")
-                    return "Sorry, I'm having a little trouble thinking right now.", 0
+                    
+                    # If this is a user's personal API that failed, give specific feedback
+                    if user_config and response.status in [401, 403]:
+                        return "❌ **API Error**: Your API key appears to be invalid or has insufficient permissions. Please check your API key and try configuring again with `/configure_api`.", 0
+                    elif user_config and response.status == 400:
+                        return "❌ **API Error**: Invalid model name or request format. Please check your model name (e.g., `anthropic/claude-3-sonnet`) and try `/configure_api` again.", 0
+                    else:
+                        return "Sorry, I'm having a little trouble thinking right now.", 0
     except Exception as e:
         print(f"An exception occurred during API request: {e}")
         return "I seem to have lost my train of thought...", 0
@@ -1579,6 +1642,10 @@ class APIConfigModal(discord.ui.Modal, title='Configure API Settings'):
             provider = API_PROVIDERS[provider_key]
             self.endpoint.default = provider['endpoint']
             self.model.placeholder = provider['models'][0] if provider['models'] else "Enter model name"
+            
+            # Set default model value for easier use
+            if provider['models']:
+                self.model.default = provider['models'][0]
         
     api_key = discord.ui.TextInput(label='API Key', style=discord.TextStyle.short, max_length=200, required=True, placeholder="Enter your API key...")
     endpoint = discord.ui.TextInput(label='API Endpoint', style=discord.TextStyle.short, max_length=300, required=False, placeholder="Auto-filled based on provider")
